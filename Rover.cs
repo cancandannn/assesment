@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Rover
 {
@@ -140,7 +140,7 @@ class Program
             int y = int.Parse(currentPosition[1]);
             char direction = char.Parse(currentPosition[2]);
 
-            Rover rover = new Rover(x, y, direction, plateauX, plateauY);
+            Rover rover = new Rover(x, y, plateauX, plateauY, direction);
 
             string commands = Console.ReadLine();
             foreach (char command in commands)
